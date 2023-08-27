@@ -1,0 +1,42 @@
+.nav {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 7rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: var(--navy);
+  border: 2px solid var(--navy);
+  transition: all ease 0.3s;
+  font-weight: 600;
+  border-radius: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #fff;
+    span,
+    p {
+      color: var(--navy);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  p {
+    color: #fff;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    transform: translateY(0.125rem);
+    color: #fff;
+  }
+}

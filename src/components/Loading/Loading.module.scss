@@ -1,0 +1,33 @@
+.loading {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  > p {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 1.35rem;
+    color: #333;
+
+    > span {
+      display: inline-block;
+      animation: rolling 1s infinite linear;
+    }
+  }
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 640px) {
+  .loading > p {
+    font-size: 1.25rem;
+  }
+}

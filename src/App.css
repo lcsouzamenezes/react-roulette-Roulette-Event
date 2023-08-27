@@ -1,0 +1,200 @@
+:root {
+  --orange: #f8b215;
+  --navy: #021d38;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+π p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+main,
+section,
+article,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background-color: transparent;
+  box-sizing: border-box;
+  word-break: keep-all;
+  line-height: 1.4em;
+}
+html {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  color: #000;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+}
+select,
+input,
+textarea,
+button {
+  font-size: 1em;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  vertical-align: middle;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  line-height: 1.4em;
+}
+button {
+  cursor: pointer;
+}
+a {
+  outline: none;
+  color: #000;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+select {
+  padding-left: 5px;
+  border: none;
+}
+select::-ms-expand {
+  display: none;
+}
+input[type='text'],
+input[type='password'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input::placeholder {
+  color: #bbb;
+}
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: top;
+}
+th {
+  font-size: 1em;
+}
+img,
+fieldset {
+  border: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+}
+label {
+  cursor: pointer;
+}
+legend,
+caption {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+em {
+  font-style: normal;
+}
+ins {
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 2rem 0;
+}
+
+@media all and (max-width: 640px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .viewport {
+    padding: 2rem;
+  }
+}

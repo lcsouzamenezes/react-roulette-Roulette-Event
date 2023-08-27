@@ -1,0 +1,46 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  hgroup {
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.8rem;
+      font-weight: 500;
+    }
+    span {
+      background: var(--navy);
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  .roulette {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .section hgroup p br {
+    display: none;
+  }
+
+  .section .roulette {
+    width: calc(100vw - 4rem);
+    height: calc(100vw - 4rem);
+    border-width: 3px;
+  }
+}
